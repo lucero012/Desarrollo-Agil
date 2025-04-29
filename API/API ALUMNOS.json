@@ -1,0 +1,304 @@
+{
+  "uuid": "0600e43b-4263-45f8-bbae-bc4705751e5e",
+  "lastMigration": 33,
+  "name": "API ALUMNOS",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "f0ea4630-14dc-4bf2-b821-2d659e90a649",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "alumnos",
+      "responses": [
+        {
+          "uuid": "408d27de-5f2d-4f22-9a1b-9e61fb8bda2c",
+          "body": "{\n  [\n  {\n    \"id\": 1,\n    \"numero_control\": \"20231001\",\n    \"nombre\": \"María\",\n    \"apellido\": \"González\",\n    \"direccion\": \"Calle 5 de Mayo #123, Ciudad de México\",\n    \"carrera\": \"Ingeniería en Sistemas Computacionales\",\n    \"semestre\": 4\n  },\n  {\n    \"id\": 2,\n    \"numero_control\": \"20231002\",\n    \"nombre\": \"Luis\",\n    \"apellido\": \"Ramírez\",\n    \"direccion\": \"Av. Juárez #45, Guadalajara\",\n    \"carrera\": \"Ingeniería Electrónica\",\n    \"semestre\": 3\n  },\n  {\n    \"id\": 3,\n    \"numero_control\": \"20231003\",\n    \"nombre\": \"Andrea\",\n    \"apellido\": \"Martínez\",\n    \"direccion\": \"Blvd. Independencia #89, Monterrey\",\n    \"carrera\": \"Arquitectura\",\n    \"semestre\": 2\n  },\n  {\n    \"id\": 4,\n    \"numero_control\": \"20231004\",\n    \"nombre\": \"Carlos\",\n    \"apellido\": \"Hernández\",\n    \"direccion\": \"Calle Reforma #12, Puebla\",\n    \"carrera\": \"Contaduría Pública\",\n    \"semestre\": 5\n  },\n  {\n    \"id\": 5,\n    \"numero_control\": \"20231005\",\n    \"nombre\": \"Fernanda\",\n    \"apellido\": \"López\",\n    \"direccion\": \"Av. Universidad #100, Querétaro\",\n    \"carrera\": \"Diseño Gráfico\",\n    \"semestre\": 6\n  }\n]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "349e572d-ca2c-47c1-9b99-d38660242b28",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "mostrarAlumnoID/5",
+      "responses": [
+        {
+          "uuid": "4c5886a0-67d8-422f-a5fe-020593aaeed0",
+          "body": "{\n  {\n    \"id\": 5,\n    \"numero_control\": \"20231005\",\n    \"nombre\": \"Fernanda\",\n    \"apellido\": \"López\",\n    \"direccion\": \"Av. Universidad #100, Querétaro\",\n    \"carrera\": \"Diseño Gráfico\",\n    \"semestre\": 6\n  }\n]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "61c7f25c-5dce-4647-9bcd-838fbeaa2a62",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "MostrarAlumnoID/6",
+      "responses": [
+        {
+          "uuid": "070ff827-de98-46cd-8395-ca92f51a3593",
+          "body": "{\n  \"mensaje\":\"El alumno no existe\"\n}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "8f3f36ee-ba03-415b-8e73-9d6ea5ea3921",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "crear-alumno",
+      "responses": [
+        {
+          "uuid": "fa7659d1-a18d-418a-970c-a0003f35c919",
+          "body": "{\n  {\n  \"mensaje\":\"Alumno creado exitosamente\"\n}\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "ce5c788d-2b68-41e3-b5f3-4a978eeb5168",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "eliminar",
+      "responses": [
+        {
+          "uuid": "fde92b5a-dffa-4f2c-9e6d-fe14d06582cc",
+          "body": "{\n  {\n  \"mensaje\":\"El alumno eliminado\"\n}\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "71a397e1-e962-4e96-99e8-df9973bc5b47",
+      "type": "http",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "editar-alumno/5",
+      "responses": [
+        {
+          "uuid": "5ef41870-b7e7-4d88-b7d6-94e77be08c4c",
+          "body": "{\n  [\n  {\n    \"id\": 5,\n    \"numero_control\": \"20231005\",\n    \"nombre\": \"Fernanda\",\n    \"apellido\": \"López Perez\",\n    \"direccion\": \"Av. Universidad #10, Querétaro\",\n    \"carrera\": \"Arquitectura\",\n    \"semestre\": 8\n  }\n]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "10f19c84-80fa-421b-bd59-0e8abf7ae7fc",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "crea-alumno-v",
+      "responses": [
+        {
+          "uuid": "11d2507b-abf5-46bd-b803-0fd4b01fe701",
+          "body": "{\n  \"mensaje\":\"falta completar el campo nombre\"\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "f0ea4630-14dc-4bf2-b821-2d659e90a649"
+    },
+    {
+      "type": "route",
+      "uuid": "349e572d-ca2c-47c1-9b99-d38660242b28"
+    },
+    {
+      "type": "route",
+      "uuid": "61c7f25c-5dce-4647-9bcd-838fbeaa2a62"
+    },
+    {
+      "type": "route",
+      "uuid": "8f3f36ee-ba03-415b-8e73-9d6ea5ea3921"
+    },
+    {
+      "type": "route",
+      "uuid": "ce5c788d-2b68-41e3-b5f3-4a978eeb5168"
+    },
+    {
+      "type": "route",
+      "uuid": "71a397e1-e962-4e96-99e8-df9973bc5b47"
+    },
+    {
+      "type": "route",
+      "uuid": "10f19c84-80fa-421b-bd59-0e8abf7ae7fc"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}

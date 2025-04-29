@@ -1,0 +1,304 @@
+{
+  "uuid": "2f854b36-cc08-4502-958c-51dff2011eb8",
+  "lastMigration": 33,
+  "name": "Productos Abarrotes",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3002,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "ee1d2a90-d944-4b69-9708-752440039504",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "productos",
+      "responses": [
+        {
+          "uuid": "30797a6c-806e-4d32-b253-04ff11c6b04a",
+          "body": "{\n  [\n  {\n    \"id\": 1,\n    \"nombre\": \"Arroz Súper Extra\",\n    \"categoria\": \"Granos\",\n    \"marca\": \"La Moderna\",\n    \"precio\": 24.50,\n    \"unidad\": \"kg\",\n    \"stock\": 120\n  },\n  {\n    \"id\": 2,\n    \"nombre\": \"Frijol Negro\",\n    \"categoria\": \"Granos\",\n    \"marca\": \"Doña María\",\n    \"precio\": 29.00,\n    \"unidad\": \"kg\",\n    \"stock\": 80\n  },\n  {\n    \"id\": 3,\n    \"nombre\": \"Aceite Vegetal\",\n    \"categoria\": \"Aceites\",\n    \"marca\": \"Nutrioli\",\n    \"precio\": 38.90,\n    \"unidad\": \"litro\",\n    \"stock\": 60\n  },\n  {\n    \"id\": 4,\n    \"nombre\": \"Azúcar Morena\",\n    \"categoria\": \"Endulzantes\",\n    \"marca\": \"Zulka\",\n    \"precio\": 22.75,\n    \"unidad\": \"kg\",\n    \"stock\": 100\n  },\n  {\n    \"id\": 5,\n    \"nombre\": \"Sal de Mesa\",\n    \"categoria\": \"Condimentos\",\n    \"marca\": \"La Fina\",\n    \"precio\": 10.50,\n    \"unidad\": \"kg\",\n    \"stock\": 200\n  },\n  {\n    \"id\": 6,\n    \"nombre\": \"Leche Entera\",\n    \"categoria\": \"Lácteos\",\n    \"marca\": \"Lala\",\n    \"precio\": 21.00,\n    \"unidad\": \"litro\",\n    \"stock\": 90\n  },\n  {\n    \"id\": 7,\n    \"nombre\": \"Harina de Trigo\",\n    \"categoria\": \"Harinas\",\n    \"marca\": \"Selecta\",\n    \"precio\": 18.30,\n    \"unidad\": \"kg\",\n    \"stock\": 75\n  },\n  {\n    \"id\": 8,\n    \"nombre\": \"Papel Higiénico 4 rollos\",\n    \"categoria\": \"Higiene\",\n    \"marca\": \"Regio\",\n    \"precio\": 39.90,\n    \"unidad\": \"paquete\",\n    \"stock\": 50\n  },\n  {\n    \"id\": 9,\n    \"nombre\": \"Café Soluble\",\n    \"categoria\": \"Bebidas\",\n    \"marca\": \"Nescafé\",\n    \"precio\": 68.00,\n    \"unidad\": \"frasco 225g\",\n    \"stock\": 40\n  },\n  {\n    \"id\": 10,\n    \"nombre\": \"Atún en Agua\",\n    \"categoria\": \"Enlatados\",\n    \"marca\": \"Dolores\",\n    \"precio\": 18.90,\n    \"unidad\": \"lata 140g\",\n    \"stock\": 130\n  }\n]\n\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "68a49b62-f158-4498-ac6a-0c25d7862fae",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "producto/3",
+      "responses": [
+        {
+          "uuid": "23d2a4f3-71cf-49e2-9e2e-ac7590377ef4",
+          "body": "{\n  \n    \"id\": 3,\n    \"nombre\": \"Aceite Vegetal\",\n    \"categoria\": \"Aceites\",\n    \"marca\": \"Nutrioli\",\n    \"precio\": 38.90,\n    \"unidad\": \"litro\",\n    \"stock\": 60\n  \n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "31e6d379-8b8b-4c34-9720-6b23a8af793a",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "producto/11",
+      "responses": [
+        {
+          "uuid": "8d63085b-fef2-499e-a5b9-e04b6e516016",
+          "body": "{\n  \"mensaje\":\"Producto no encontrado\"\n}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "07e3a495-0080-439e-993b-902904de63f5",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "Agregar-Producto",
+      "responses": [
+        {
+          "uuid": "ade8fd7d-7d9a-4bd4-832f-c56d09aa963d",
+          "body": "{\n  \"mensaje\": \"Producto agrgado exitosamente\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "fcc2fde8-5c6b-4200-800d-16b1bba764f9",
+      "type": "http",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "Eliminar-Producto",
+      "responses": [
+        {
+          "uuid": "5b203a38-a4a7-4f2e-bc54-661afaadcac1",
+          "body": "{\n  \"mensaje\":\" Producto Eliminado Correctamente\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "c539c396-5b54-4fca-ad44-722cacf81046",
+      "type": "http",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "Editar-Producto",
+      "responses": [
+        {
+          "uuid": "32092bf9-6925-49bb-820e-f0f84179144b",
+          "body": "{\n  \"mensaje\": \"Producto editado correctamente\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "575985fc-b02c-41e5-b811-0bec2b36778d",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "crear-producto-v",
+      "responses": [
+        {
+          "uuid": "e514ad72-c711-4202-bf1c-43179ba160e1",
+          "body": "{\n  \"mensaje\": \"Falta completar el campo nombre\"\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "ee1d2a90-d944-4b69-9708-752440039504"
+    },
+    {
+      "type": "route",
+      "uuid": "68a49b62-f158-4498-ac6a-0c25d7862fae"
+    },
+    {
+      "type": "route",
+      "uuid": "31e6d379-8b8b-4c34-9720-6b23a8af793a"
+    },
+    {
+      "type": "route",
+      "uuid": "07e3a495-0080-439e-993b-902904de63f5"
+    },
+    {
+      "type": "route",
+      "uuid": "fcc2fde8-5c6b-4200-800d-16b1bba764f9"
+    },
+    {
+      "type": "route",
+      "uuid": "c539c396-5b54-4fca-ad44-722cacf81046"
+    },
+    {
+      "type": "route",
+      "uuid": "575985fc-b02c-41e5-b811-0bec2b36778d"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
